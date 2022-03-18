@@ -1,0 +1,11 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Google\ClearBrowsingDataOnExitList]
+"1"="browsing_history"
+"2"="download_history"
+"3"="cookies_and_other_site_data"
+"4"="cached_images_and_files"
+"5"="password_signin"
+"6"="autofill"
+"7"="site_settings"
+"8"="hosted_app_data"

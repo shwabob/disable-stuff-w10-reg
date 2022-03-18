@@ -1,0 +1,74 @@
+Windows Registry Editor Version 5.00
+
+; Disable MSFT Accounts
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\default\Settings\AllowYourAccount]
+"value"=dword:00000000
+
+; Disable Auto setup of Network Connected Devices on Private Networks
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\NcdAutoSetup\Private]
+"AutoSetup"=dword:00000000
+
+; Disable "Meet Now" garbage (added Dec 2020)
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"ForceActiveDesktopOn"=dword:00000000
+"NoActiveDesktop"=dword:00000001
+"NoActiveDesktopChanges"=dword:00000001
+"NoRecentDocsHistory"=dword:00000000
+"NoWelcomeScreen"=dword:00000001
+"HideSCAMeetNow"=dword:00000001
+
+; Disable MSFT Accounts
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+"NoConnectedUser"=dword:00000003
+
+; Disable Find My Device
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\FindMyDevice]
+"AllowFindMyDevice"=dword:00000000
+
+; Disable Cloud Content and Windows Consumer Features
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CloudContent]
+"DisableCloudOptimizedContent"=dword:00000000
+"DisableSoftLanding"=dword:00000000
+"DisableWindowsConsumerFeatures"=dword:00000000
+
+; Disable homegroup
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\HomeGroup]
+"DisableHomeGroup"=dword:00000001
+
+; Disable user activity feed/history and lock screen notifications
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System]
+"EnableActivityFeed"=dword:00000000
+"PublishUserActivities"=dword:00000000
+"UploadUserActivities"=dword:00000000
+"AllowClipboardHistory"=dword:00000000
+"AllowCrossDeviceClipboard"=dword:00000000
+"DisableLockScreenAppNotifications"=dword:00000001
+"BlockDomainPicturePassword"=dword:00000001
+"AllowDomainPINLogon"=dword:00000000
+
+; Disable "News and Feeds" garbage (added Jun 2020)
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Feeds]
+"EnableFeeds"=dword:00000000
+
+; Disable cortana and cloud search
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"AllowSearchToUseLocation"=dword:00000000
+"DisableWebSearch"=dword:00000001
+"ConnectedSearchUseWeb"=dword:00000000
+"AllowCortana"=dword:00000000
+"AllowCloudSearch"=dword:00000000
+
+; Set Windows Update Target Version
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate]
+"TargetReleaseVersion"=dword:00000001
+"ProductVersion"="Windows 10"
+"TargetReleaseVersionInfo"="21H1"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU]
+"EnableFeaturedSoftware"=dword:00000000
+"NoAutoRebootWithLoggedOnUsers"=dword:00000001
+"NoAutoUpdate"=dword:00000000
+
+; Disable Windows 11 Upgrade from Microsoft Store
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsStore]
+"DisableOSUpgrade"=dword:00000001

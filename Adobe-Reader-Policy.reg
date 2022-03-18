@@ -1,0 +1,11 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Adobe\Acrobat Reader\DC\FeatureLockdown]
+"bAutoFill"=dword:00000000
+"bDisablePDFHandlerSwitching"=dword:00000000
+"bUpdater"=dword:00000001
+"bUsageMeasurement"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Adobe\Acrobat Reader\DC\FeatureLockdown\cIPM]
+"bDontShowMsgWhenViewingDoc"=dword:00000000
+"bShowMsgAtLaunch"=dword:00000000

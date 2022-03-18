@@ -1,0 +1,6 @@
+Windows Registry Editor Version 5.00
+
+; Disable onedrive
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\OneDrive]
+"DisableLibrariesDefaultSaveToOneDrive"=dword:00000001
+"DisableFileSyncNGSC"=dword:00000000

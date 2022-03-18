@@ -1,0 +1,14 @@
+Windows Registry Editor Version 5.00
+
+; Clear data when browser is closed
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Mozilla\Firefox\SanitizeOnShutdown]
+"Default"=dword:00000001
+"Sessions"=dword:00000001
+"History"=dword:00000001
+"Cache"=dword:00000001
+"Cookies"=dword:00000001
+"Downloads"=dword:00000001
+"FormData"=dword:00000001
+"Locked"=dword:00000001
+"OfflineApps"=dword:00000001
+"SiteSettings"=dword:00000001
